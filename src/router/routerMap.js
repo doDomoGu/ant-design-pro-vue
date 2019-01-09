@@ -1,6 +1,7 @@
 // import { UserLayout, BasicLayout, RouteView, BlankLayout, PageView } from '@/components/layouts'
 
-import Home from '@/views/Home.vue'
+// import Home from '@/views/Home.vue'
+import MainLayout from '@/components/layouts/MainLayout'
 
 
 export const asyncRouterMap = [
@@ -301,17 +302,29 @@ export const constantRouterMap = [
 
     {
         path: '/',
-        name: 'home',
-        component: Home
+        // name: 'home',
+        // component: Home
+        component: MainLayout,
+        children: [
+            {
+                path: '',
+                name: 'home',
+                component: () => import('@/views/Home.vue')
+            },
+            {
+                path: '/404',
+                component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
+            },
+        ]
     },
-    {
-        path: '/about',
-        name: 'about',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
-    },
+    // {
+    //     path: '/about',
+    //     name: 'about',
+    //     // route level code-splitting
+    //     // this generates a separate chunk (about.[hash].js) for this route
+    //     // which is lazy-loaded when the route is visited.
+    //     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
+    // },
 
 
     // {
@@ -350,10 +363,7 @@ export const constantRouterMap = [
     //         }
     //     ]
     // },
-    {
-        path: '/404',
-        component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
-    },
+    
     {
         path: '*', redirect: '/404', hidden: true
     }
