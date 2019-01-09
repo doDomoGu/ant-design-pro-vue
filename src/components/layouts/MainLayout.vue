@@ -38,7 +38,6 @@ export default {
 </script>
 <style scoped>
 .ant-layout {
-  text-align: center;
 }
 .ant-layout .ant-layout-content {
   padding-top:64px;
