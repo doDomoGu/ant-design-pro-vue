@@ -37,8 +37,8 @@ export default {
 }
 </script>
 <style scoped>
-.ant-layout {
-}
+/* .ant-layout {
+} */
 .ant-layout .ant-layout-content {
   padding-top:64px;
   height:100%;

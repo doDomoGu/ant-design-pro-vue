@@ -5,6 +5,7 @@
 </template>
 <style scoped>
 #app {
+  background: #eeeeee;
   height:100%;
 }
 </style>

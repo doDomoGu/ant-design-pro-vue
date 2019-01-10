@@ -5,8 +5,8 @@
 </template>
 <style scoped>
   .ant-layout-footer {
-    background: #103f61;
-    color: rgb(187, 170, 170);
+    background: #8a8a8a;
+    color: #ffffff;
     text-align: center;
   }
 </style>

@@ -1,17 +1,6 @@
 <template>
-  <div style="background:#558899;">
+  <div class="content">
     This is Home page.
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
-    <h1>This is Home page.</h1>
     <h1>This is Home page.</h1>
     <h1>This is Home page.</h1>
     <h1>This is Home page.</h1>
@@ -25,3 +14,8 @@ export default {
   name: 'Home',
 }
 </script>
+<style scoped>
+.content {
+  background:#eeeeee;
+}
+</style>
