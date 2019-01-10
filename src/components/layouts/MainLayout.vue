@@ -19,7 +19,7 @@
 <script>
 import mainSider from './main/Sider'
 import mainHeader from './main/Header'
-import mainFooter from './main/Footer'
+import mainFooter from './Footer'
 export default {
   name: 'MainLayout',
   components: { mainSider, mainHeader, mainFooter },

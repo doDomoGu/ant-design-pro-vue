@@ -1,6 +1,6 @@
 <template>
   <a-layout-footer>
-    This is Footer
+    This is Footer 
   </a-layout-footer>
 </template>
 <style scoped>

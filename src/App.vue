@@ -5,7 +5,7 @@
 </template>
 <style scoped>
 #app {
-  background: #eeeeee;
+  background: #f0f2f5;
   height:100%;
 }
 </style>
